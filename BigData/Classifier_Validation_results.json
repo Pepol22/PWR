@@ -1,0 +1,9 @@
+[
+  "Metoda ekstrakcji: Resnet152\n Nazwa klasyfikatora: K Nearest Neighbours Czas: 1.5909395217895508, Miara dokladnosci: 0.7640913508260447, Czulosc: 0.7640913508260447, miara f-1: 0.7558632069944619",
+  "Metoda ekstrakcji: Resnet152\n Nazwa klasyfikatora: Support Vector Machines Classifier Czas: 157.12010884284973, Miara dokladnosci: 0.8107385811467445, Czulosc: 0.8107385811467445, miara f-1: 0.8085977289101548",
+  "Metoda ekstrakcji: Resnet152\n Nazwa klasyfikatora: Random Forest Classifier Czas: 2245.4131858348846, Miara dokladnosci: 0.7682215743440233, Czulosc: 0.7682215743440233, miara f-1: 0.7598212549212287",
+
+  "Metoda ekstrakcji: Resnet50\n Nazwa klasyfikatora: K Nearest Neighbours Czas: 1.2943682670593262, Miara dokladnosci: 0.7033527696793003, Czulosc: 0.7033527696793003, miara f-1: 0.6929112900336718",
+  "Metoda ekstrakcji: Resnet50\n Nazwa klasyfikatora: Support Vector Machines Classifier Czas: 149.03760051727295, Miara dokladnosci: 0.7747813411078717, Czulosc: 0.7747813411078717, miara f-1: 0.7698907485697094",
+  "Metoda ekstrakcji: Resnet50\n Nazwa klasyfikatora: Random Forest Classifier Czas: 1957.9528048038483, Miara dokladnosci: 0.7210884353741497, Czulosc: 0.7210884353741497, miara f-1: 0.7068773804980756"
+]
