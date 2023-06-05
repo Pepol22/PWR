@@ -76,7 +76,7 @@ class DogBreedClassification:
                 plt.show()
 
     def resnet152_extract_features(self):
-        # Inicjalizacja sieci ResNet152
+        # Inicjalizacja sieci ResNet152V2
         resnet = ResNet152V2(weights='imagenet', include_top=False, pooling='avg')
         normalization_layer = tf.keras.layers.experimental.preprocessing.Rescaling(1. / 255)
         self.resnet152_train_dataset = self.augmented_train_dataset.map(lambda x, y: (normalization_layer(x), y))
@@ -125,7 +125,7 @@ class DogBreedClassification:
         self.RandomForest_classification("Resnet152", test_features, train_features, test_labels, train_labels)
 
     def resnet50_extract_features(self):
-        # Inicjalizacja sieci ResNet50
+        # Inicjalizacja sieci ResNet50V2
         resnet = ResNet50V2(weights='imagenet', include_top=False, pooling='avg')
         # Przeskalowanie danych
         normalization_layer = Rescaling(1. / 255)
@@ -169,9 +169,9 @@ class DogBreedClassification:
         test_features = np.load(os.path.join(self.resnet50_path, "resnet50_test_features.npy"))
         test_labels = np.load(os.path.join(self.resnet50_path, "resnet50_test_labels.npy"))
 
-        self.k_nearest_neighbours("Resnet50", test_features, train_features, test_labels, train_labels)
-        self.SVM_classification("Resnet50", test_features, train_features, test_labels, train_labels)
-        self.RandomForest_classification("Resnet50", test_features, train_features, test_labels, train_labels)
+        self.k_nearest_neighbours("Resnet50V2", test_features, train_features, test_labels, train_labels)
+        self.SVM_classification("Resnet50V2", test_features, train_features, test_labels, train_labels)
+        self.RandomForest_classification("Resnet50V2", test_features, train_features, test_labels, train_labels)
 
     # K najblizszych sasiadow
     def k_nearest_neighbours(self, extraction_method, test_features, train_features, test_labels, train_labels):
